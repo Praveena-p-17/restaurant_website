@@ -1,0 +1,114 @@
+<!--order forum-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Southern Spices</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+	<link rel="javascript" href="main.js">
+	 
+	 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<section class="order" id="order">
+	<div class="title">
+		<h2 class="titletext"><span>O</span>rder Now</h2>
+		<p>Taste that best, its on time</p>
+	</div>
+	 <div class="orderform">
+		 <form action="">
+			 <input type="text" placeholder="Your name" class="ordera">
+			 <input type="text" placeholder="Your phone number" class="ordera">
+			<textarea name="" id="orderc" cols="30" rows="10" class="ordera orderc" placeholder="Your address"></textarea> 
+
+			<textarea name="" id="orderd" cols="30" rows="10" class="ordera orderc" placeholder="items"></textarea> 
+
+			<div class="inputbox"> 
+				<button onclick="myFunction()">order</button> 
+				<p id="button"></p>
+			</div>
+		 </form>
+		 <div class="picture">
+             <img src="pictures/order.png" alt="">
+		 </div>
+	 </div>
+	 
+
+</section>
+
+<!-- Footer Menu -->
+
+
+<footer id = "footer">
+        
+    <div class="company-details">
+        <div class="row">
+            <div id ="col1">
+                <span id = "icon" class="fa fa-map-marker"></span>
+                      
+                <span>
+					Our Branches:
+                     <ul>
+						 <li>Chennai</li>
+						 <li>Cochin</li>
+						 <li>Vishakapatnam</li>
+						 <li>Bangalore</li>
+						 <li>Mumbai</li>
+						 <li>Delhi</li>
+					 </ul>
+                </span>
+            </div>
+                  
+            <div id ="col2">
+                <span id="icon" class="fa fa-phone"></span>
+  
+                <span>
+                    phone:   +91-9944887676 <br>
+					             +91-9944887677 <br>
+							     +91-9944887678
+					           
+                </span>
+            </div>
+                      
+            <div id ="col3">
+                <span id="icon" class="fa fa-envelope"></span>
+                <span>southernspices@gmail.com</span> <br>
+				<span>southernspices@yahoo.com</span> <br>
+				<span>southernspices@outlook.com</span> <br>
+				
+
+            </div>
+        </div>
+    </div>
+              
+    <!-- Copyright Section -->
+    <div class="copyright">
+        <p>©  All rights reserved 2021 | SouthernSpices.</p>
+      
+        <div class="contactus">
+			<p><i class="fa fa-facebook-square"></i> <i class="fa fa-instagram"></i> <i class="fa fa-twitter-square"></i>  </p> <br>
+			<p>Also find us on: <img src="pictures/app2.png">  <img src="pictures/app1.png"></p>
+		</div>
+    </div>
+</footer>
+
+ 
+ 
+<script type="text/javascript">
+window.addEventListener('scroll',function(){
+	const header = document.querySelector('header');
+	header.classList.toggle("sticky",window.scrollY > 0);
+});
+</script>
+<script type="text/javascript">
+	function myFunction() {
+  document.getElementById("button").innerHTML = "order confirmed!";
+}
+</script>
+ 
+ 
+</body>
+</html>
